@@ -1,0 +1,407 @@
+{
+  "header" : {
+    "dataModelVersion" : "2"
+  },
+  "content" : {
+    "comments" : "",
+    "componentType" : "PROCESS_GROUP",
+    "connections" : [ {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ {
+        "x" : 661.0000120498607,
+        "y" : 416.92377069875397
+      }, {
+        "x" : 661.0000120498607,
+        "y" : 466.92377069875397
+      } ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "961ceecd-a9d1-3694-bf76-7a713f85e149",
+        "id" : "1eabc839-9b94-3d3d-8f09-a6690022dd6b",
+        "name" : "PutInfluxDB",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "961ceecd-a9d1-3694-bf76-7a713f85e149",
+      "identifier" : "07ef6ea1-b156-3cf5-ad1a-47f60124d73d",
+      "labelIndex" : 0,
+      "name" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "retry" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "961ceecd-a9d1-3694-bf76-7a713f85e149",
+        "id" : "1eabc839-9b94-3d3d-8f09-a6690022dd6b",
+        "name" : "PutInfluxDB",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 0
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ {
+        "x" : 466.9779085046961,
+        "y" : 141.77982082608344
+      }, {
+        "x" : 466.9779085046961,
+        "y" : 191.77982082608344
+      } ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "961ceecd-a9d1-3694-bf76-7a713f85e149",
+        "id" : "2e6b232a-f5f6-3c51-bed7-c1f797eb9779",
+        "name" : "ReplaceText",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "961ceecd-a9d1-3694-bf76-7a713f85e149",
+      "identifier" : "dffc0360-e7c0-318a-91fe-3b02874ad7eb",
+      "labelIndex" : 1,
+      "name" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "failure" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "961ceecd-a9d1-3694-bf76-7a713f85e149",
+        "id" : "2e6b232a-f5f6-3c51-bed7-c1f797eb9779",
+        "name" : "ReplaceText",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 0
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "961ceecd-a9d1-3694-bf76-7a713f85e149",
+        "id" : "2e6b232a-f5f6-3c51-bed7-c1f797eb9779",
+        "name" : "ReplaceText",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "961ceecd-a9d1-3694-bf76-7a713f85e149",
+      "identifier" : "4e4a0346-ca64-329e-a355-8a041618355a",
+      "labelIndex" : 1,
+      "name" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "" ],
+      "source" : {
+        "groupId" : "961ceecd-a9d1-3694-bf76-7a713f85e149",
+        "id" : "62f01829-4b13-32dc-b258-6fcd46345077",
+        "name" : "MetricsToInflux",
+        "type" : "INPUT_PORT"
+      },
+      "zIndex" : 0
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "961ceecd-a9d1-3694-bf76-7a713f85e149",
+        "id" : "1eabc839-9b94-3d3d-8f09-a6690022dd6b",
+        "name" : "PutInfluxDB",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "961ceecd-a9d1-3694-bf76-7a713f85e149",
+      "identifier" : "2b865f1a-1764-3941-abca-cc96b6fa38e1",
+      "labelIndex" : 1,
+      "name" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "961ceecd-a9d1-3694-bf76-7a713f85e149",
+        "id" : "2e6b232a-f5f6-3c51-bed7-c1f797eb9779",
+        "name" : "ReplaceText",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 0
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ {
+        "x" : 661.0000120498607,
+        "y" : 416.92377069875397
+      }, {
+        "x" : 661.0000120498607,
+        "y" : 466.92377069875397
+      } ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "961ceecd-a9d1-3694-bf76-7a713f85e149",
+        "id" : "1eabc839-9b94-3d3d-8f09-a6690022dd6b",
+        "name" : "PutInfluxDB",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "961ceecd-a9d1-3694-bf76-7a713f85e149",
+      "identifier" : "8897dfd8-e6d9-3666-904a-ded3a3fa8c71",
+      "labelIndex" : 1,
+      "name" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "failure", "failure-max-size" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "961ceecd-a9d1-3694-bf76-7a713f85e149",
+        "id" : "1eabc839-9b94-3d3d-8f09-a6690022dd6b",
+        "name" : "PutInfluxDB",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 0
+    } ],
+    "controllerServices" : [ ],
+    "funnels" : [ ],
+    "identifier" : "961ceecd-a9d1-3694-bf76-7a713f85e149",
+    "inputPorts" : [ {
+      "componentType" : "INPUT_PORT",
+      "concurrentlySchedulableTaskCount" : 1,
+      "groupIdentifier" : "961ceecd-a9d1-3694-bf76-7a713f85e149",
+      "identifier" : "62f01829-4b13-32dc-b258-6fcd46345077",
+      "name" : "MetricsToInflux",
+      "position" : {
+        "x" : 234.99999679107168,
+        "y" : -39.99999639108978
+      },
+      "type" : "INPUT_PORT"
+    } ],
+    "labels" : [ ],
+    "name" : "PushToInfluxDB",
+    "outputPorts" : [ ],
+    "position" : {
+      "x" : -667.8296846054127,
+      "y" : 331.72496393605866
+    },
+    "processGroups" : [ ],
+    "processors" : [ {
+      "autoTerminatedRelationships" : [ ],
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-standard-nar",
+        "group" : "org.apache.nifi",
+        "version" : "1.8.0.3.3.1.0-10"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "961ceecd-a9d1-3694-bf76-7a713f85e149",
+      "identifier" : "2e6b232a-f5f6-3c51-bed7-c1f797eb9779",
+      "name" : "ReplaceText",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 3.9779085046960745,
+        "y" : 101.77982082608344
+      },
+      "properties" : {
+        "Regular Expression" : "metricname",
+        "Replacement Value" : "measurement",
+        "Evaluation Mode" : "Entire text",
+        "Character Set" : "UTF-8",
+        "Maximum Buffer Size" : "1 MB",
+        "Replacement Strategy" : "Regex Replace"
+      },
+      "propertyDescriptors" : {
+        "Regular Expression" : {
+          "displayName" : "Search Value",
+          "identifiesControllerService" : false,
+          "name" : "Regular Expression",
+          "sensitive" : false
+        },
+        "Replacement Value" : {
+          "displayName" : "Replacement Value",
+          "identifiesControllerService" : false,
+          "name" : "Replacement Value",
+          "sensitive" : false
+        },
+        "Evaluation Mode" : {
+          "displayName" : "Evaluation Mode",
+          "identifiesControllerService" : false,
+          "name" : "Evaluation Mode",
+          "sensitive" : false
+        },
+        "Character Set" : {
+          "displayName" : "Character Set",
+          "identifiesControllerService" : false,
+          "name" : "Character Set",
+          "sensitive" : false
+        },
+        "Maximum Buffer Size" : {
+          "displayName" : "Maximum Buffer Size",
+          "identifiesControllerService" : false,
+          "name" : "Maximum Buffer Size",
+          "sensitive" : false
+        },
+        "Replacement Strategy" : {
+          "displayName" : "Replacement Strategy",
+          "identifiesControllerService" : false,
+          "name" : "Replacement Strategy",
+          "sensitive" : false
+        }
+      },
+      "runDurationMillis" : 0,
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.standard.ReplaceText",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ ],
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-scripting-nar",
+        "group" : "org.apache.nifi",
+        "version" : "1.8.0.3.3.1.0-10"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "961ceecd-a9d1-3694-bf76-7a713f85e149",
+      "identifier" : "55114107-553d-3111-ba69-9c521ed01cb8",
+      "name" : "ExecuteScript",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 707.4889602772784,
+        "y" : 77.8517957624187
+      },
+      "properties" : {
+        "Script Engine" : "python"
+      },
+      "propertyDescriptors" : {
+        "Script File" : {
+          "displayName" : "Script File",
+          "identifiesControllerService" : false,
+          "name" : "Script File",
+          "sensitive" : false
+        },
+        "Script Engine" : {
+          "displayName" : "Script Engine",
+          "identifiesControllerService" : false,
+          "name" : "Script Engine",
+          "sensitive" : false
+        },
+        "Script Body" : {
+          "displayName" : "Script Body",
+          "identifiesControllerService" : false,
+          "name" : "Script Body",
+          "sensitive" : false
+        },
+        "Module Directory" : {
+          "displayName" : "Module Directory",
+          "identifiesControllerService" : false,
+          "name" : "Module Directory",
+          "sensitive" : false
+        }
+      },
+      "runDurationMillis" : 0,
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.script.ExecuteScript",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ "success" ],
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-influxdb-nar",
+        "group" : "org.apache.nifi",
+        "version" : "1.8.0.3.3.1.0-10"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "961ceecd-a9d1-3694-bf76-7a713f85e149",
+      "identifier" : "1eabc839-9b94-3d3d-8f09-a6690022dd6b",
+      "name" : "PutInfluxDB",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 198.00001204986074,
+        "y" : 376.92377069875397
+      },
+      "properties" : {
+        "influxdb-charset" : "UTF-8",
+        "influxdb-consistency-level" : "ONE",
+        "influxdb-dbname" : "nifi",
+        "influxdb-username" : "nifi",
+        "influxdb-url" : "http://grafana.directaxis.co.za:8086",
+        "InfluxDB Max Connection Time Out (seconds)" : "0 seconds",
+        "influxdb-retention-policy" : "autogen",
+        "influxdb-max-records-size" : "1 MB"
+      },
+      "propertyDescriptors" : {
+        "influxdb-charset" : {
+          "displayName" : "Character Set",
+          "identifiesControllerService" : false,
+          "name" : "influxdb-charset",
+          "sensitive" : false
+        },
+        "influxdb-consistency-level" : {
+          "displayName" : "Consistency Level",
+          "identifiesControllerService" : false,
+          "name" : "influxdb-consistency-level",
+          "sensitive" : false
+        },
+        "influxdb-dbname" : {
+          "displayName" : "Database Name",
+          "identifiesControllerService" : false,
+          "name" : "influxdb-dbname",
+          "sensitive" : false
+        },
+        "influxdb-username" : {
+          "displayName" : "Username",
+          "identifiesControllerService" : false,
+          "name" : "influxdb-username",
+          "sensitive" : false
+        },
+        "influxdb-url" : {
+          "displayName" : "InfluxDB connection URL",
+          "identifiesControllerService" : false,
+          "name" : "influxdb-url",
+          "sensitive" : false
+        },
+        "InfluxDB Max Connection Time Out (seconds)" : {
+          "displayName" : "InfluxDB Max Connection Time Out (seconds)",
+          "identifiesControllerService" : false,
+          "name" : "InfluxDB Max Connection Time Out (seconds)",
+          "sensitive" : false
+        },
+        "influxdb-retention-policy" : {
+          "displayName" : "Retention Policy",
+          "identifiesControllerService" : false,
+          "name" : "influxdb-retention-policy",
+          "sensitive" : false
+        },
+        "influxdb-password" : {
+          "displayName" : "Password",
+          "identifiesControllerService" : false,
+          "name" : "influxdb-password",
+          "sensitive" : false
+        },
+        "influxdb-max-records-size" : {
+          "displayName" : "Max size of records",
+          "identifiesControllerService" : false,
+          "name" : "influxdb-max-records-size",
+          "sensitive" : false
+        }
+      },
+      "runDurationMillis" : 0,
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.influxdb.PutInfluxDB",
+      "yieldDuration" : "1 sec"
+    } ],
+    "remoteProcessGroups" : [ ],
+    "variables" : { }
+  }
+}

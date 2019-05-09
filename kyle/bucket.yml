@@ -1,0 +1,4 @@
+flows:
+  6a743ed3-43d0-4654-9a67-3db56f90d1b9: {ver: 1, file: PushToInfluxDB.snapshot}
+layoutVer: 1
+bucketId: aaecb656-fde4-451a-b19e-122e264039be
